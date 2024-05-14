@@ -1,0 +1,16 @@
+
+
+
+<div>
+    <button (click)="flag = !flag">car</button>
+    <button (click)="flag1 = !flag1">airplane</button>
+    <button (click)="flag2 = !flag2">ship</button>
+</div>
+
+
+<div class="obj" *ngIf = "flag">{{carInfo}}</div>
+<div class="obj" *ngIf = "flag1">{{airplaneInfo}}</div>
+<div class="obj" *ngIf = "flag2">{{shipInfo}}</div>
+
+
+
